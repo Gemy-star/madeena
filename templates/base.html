@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>   {% block title %}صحيفة مال  {% endblock title %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gulzar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/vendors/mdi/css/materialdesignicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendors/aos/dist/aos.css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendors/owl.carousel/dist/assets/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendors/owl.carousel/dist/assets/owl.theme.default.min.css' %}">
+    <link rel="shortcut icon" href="{% static 'assets/images/logo_back.png' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.min.css" integrity="sha512-/RUbtHakVMJrg1ILtwvDIceb/cDkk97rWKvfnFSTOmNbytCyEylutDqeEr9adIBye3suD3RfcsXLOLBqYRW4gw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    {% block style %}  {% endblock style %}
+    <style>
+      body {
+        text-align: right !important;
+
+      }
+      video {
+        width: auto !important;
+        height: auto !important;
+      }
+   </style>
+
+
+  </head>
+
+  <body>
+   <div class="container-scroller">
+      <div class="main-panel w-100 h-100">
+        {% include 'partials/_navbar.html' %}
+
+
+{% block content %}
+
+{% endblock content %}
+                {% include 'partials/_footer.html' %}
+
+
+      </div>
+   </div>
+                  <script src="{% static 'assets/vendors/js/vendor.bundle.base.js' %}"></script>
+
+                <script src="{% static 'assets/vendors/owl.carousel/dist/owl.carousel.min.js' %}"></script>
+
+                <script src="{% static 'assets/js/demo.js' %}"></script>
+          {% block js %}
+
+{% endblock js %}
+  </body>
+</html>

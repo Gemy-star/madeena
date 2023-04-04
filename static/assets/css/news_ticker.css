@@ -1,0 +1,40 @@
+button,
+a {
+  border-radius: 5px;
+}
+
+.news {
+  width: 160px;
+}
+
+.news-scroll a {
+  text-decoration: none;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 2px !important;
+  background-color: #aa952d !important;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.bg-maal {
+  background-color: #aa952d !important;
+
+}
+
+.txt-news a {
+  color: #000000 !important;
+
+}
+
+.news-text {
+  display: flex;
+  justify-content: center;
+  align-self: baseline;
+  align-items: center;
+}

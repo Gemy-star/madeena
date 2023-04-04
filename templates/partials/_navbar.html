@@ -1,0 +1,23 @@
+{% load static %}
+{% load i18n %}
+<style>
+  input:active {
+    border:none !important;
+  "}
+</style>
+<header id="header">
+  <div class="container-fluid">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar navbar-expand-lg navbar-light mob-arabic">
+
+      <div class="d-flex justify-content-between align-items-center navbar-top">
+        <div class="mx-auto" style="margin: 0 auto;">
+          <a class="navbar-brand" href="{% url 'home-page' %}"
+            ><img src="{% static 'assets/images/logo_back.png' %}" alt=""
+          /></a>
+        </div>
+      </div>
+      {% include 'partials/_site_nav.html' %}
+    </nav>
+  </div>
+</header>

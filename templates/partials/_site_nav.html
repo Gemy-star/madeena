@@ -1,0 +1,52 @@
+{% load static %}
+<div class="navbar-bottom-menu bg-nav bd-maal">
+    <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse justify-content-start collapse d-lg-flex justify-content-between bg-nav" id="navbarSupportedContent">
+      <ul class="navbar-nav d-lg-flex justify-content-between align-items-center">
+        <li >
+          <button class="navbar-close">
+            <i class="mdi mdi-close text-white"></i>
+          </button>
+        </li>
+          <li class="nav-item d-sm-none">
+            <i class="fas fa-bars text-white"></i>
+          </li>
+        <li class="nav-item active">
+          <a class="nav-link active" href="{% url 'home-page' %}">الرئيسية</a>
+        </li>
+      </ul>
+
+    <div class=" d-lg-flex justify-content-between align-items-center">
+      <ul class="social-media pt-3">
+        <li>
+          <a href="#">
+            <i class="fab fa-whatsapp text-white"></i>
+         </a>
+        </li>
+        <li>
+          <a href="{{site_info.facebook_link}}">
+            <i class="fab fa-facebook text-white"></i>
+         </a>
+        </li>
+        <li>
+          <a href="{{site_info.instagram_link}}">
+            <i class="fab fa-instagram text-white"></i>
+         </a>
+        </li>
+        <li>
+          <a href="{{site_info.twitter_link}}">
+            <i class="fab fa-twitter text-white"></i>
+        </a>
+        </li>
+      </ul>
+    </div>
+    <div class="d-lg-flex justify-content-between align-items-center">
+      <p class="text-white m-4 text-sm">
+        {% now "j F Y"  %}
+      </p>
+    </div>
+    </div>
+  </div>
