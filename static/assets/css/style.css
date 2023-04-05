@@ -140,16 +140,22 @@ section {
 .navbar .navbar-brand img {
   width: 155px;
 }
+.btn-maal {
+  position: relative;
+    z-index: 2;
+    width: 8.5rem;
+    bottom: 226px;
+}
+
 
 body {
   margin: 0;
   font-family: "Cairo", sans-serif !important;
-
   font-size: 0.6rem;
   font-weight: 400;
   line-height: 1.5;
   color: #000000;
-  background-color: #fff;
+  background-color: #E1E1E1 !important;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -688,7 +694,7 @@ pre code {
 }
 
 @media (min-width: 992px) {
-  <<<<<<< HEAD .display-news-last {
+  HEAD .display-news-last {
     flex-direction: row;
   }
 
@@ -697,7 +703,7 @@ pre code {
     height: auto;
   }
 
-  =======>>>>>>>2950b4e (final version) .container,
+  .container,
   .container-sm,
   .container-md,
   .container-lg {
@@ -11640,6 +11646,16 @@ h6,
 
   .mob-arabic {
     direction: ltr !important;
+  }
+  .img-fluid {
+    width: 100%;
+    height: 100%;
+  }
+  .btn-maal {
+    position: relative;
+      z-index: 2;
+      width: 4.5rem;
+      bottom: 100px;
   }
 
   .footer-font {

@@ -3,16 +3,19 @@
 {% block content %}
 <div class="container-fluid">
   <div class="row d-flex justify-content-center pt-2">
-    <div class="col-12 col-lg-10 d-flex justify-content-center d-flex flex-column">
-        <video controls>
-            <source src="{% static 'assets/videos/madeena.mp4' %}" type="video/mp4">
-          المتصفح لا يدعم الفيديو
-          </video>
-          <div class="mx-auto pt-2">
-            <a href="https://maaal.com/almadina/" class="btn btn-primary bg-maal text-white"> الذهاب للموقع </a>
-        </div>
+    <div class="col-12 col-lg-12 d-flex justify-content-center d-flex flex-column ">
+       <img src="{% static 'assets/images/maal_bg.png' %}" class="img-fluid" style="z-index: 1;"/>
+       <a href="https://maaal.com/almadina/" target="_blank">
+       <center> <img id="btn_maal" src="{% static 'assets/images/btn_maal.png' %}" class="img-fluid btn-maal "/></center>
+      </a>
+
     </div>
 
   </div>
 </div>
 {% endblock content %}
+
+
+
+
+
